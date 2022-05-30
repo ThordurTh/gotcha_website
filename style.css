@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  :root {
+    --gotchaBlue: #25c5f0;
+    --boardBlack: #1b1b1b;
+    --white: #ffffff;
+    --milkTea: #f4e2c8;
+  }
+  
+  /* HEADER */
+  body {
+    background-color: var(--milkTea);
+  }
+  
+  header {
+    background-color: var(--gotchaBlue);
+    border-bottom: 4px solid var(--white);
+  }
+  
+  header .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 4px solid var(--white);
+  }
+  
+  header img {
+    width: 375px;
+    padding: 0 5rem;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  header .nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header .nav a {
+    font-size: 20px;
+    padding: 0.5rem 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header .menu {
+    border-right: 2px solid var(--white);
+  }
+  
+  header .about {
+    border-left: 2px solid var(--white);
+  }
+
+  /* FOOTER */
+
+footer {
+    background-image: url(images/wood.jpg);
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    color: white;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+  
+  footer .gradient {
+    background: linear-gradient(
+      180deg,
+      var(--milkTea) 0%,
+      rgba(255, 255, 255, 0.08) 30%
+    );
+    height: 100%;
+  }
+  
+  footer .information {
+    margin-top: 0.5rem;
+    padding-top: 5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 65%;
+    margin: 0 auto;
+  }
+  
+  footer .information p {
+    margin-bottom: 1.5rem;
+  }
+  
+  footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+    width: 100%;
+  }
+  
+  footer .map {
+    margin: 0 2rem;
+  }
+  
+  footer .map iframe {
+    width: 100%;
+  }
