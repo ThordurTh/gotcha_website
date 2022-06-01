@@ -61,6 +61,8 @@
     border-left: 2px solid var(--white);
   }
 
+  
+
 /* MAIN */
 
 /* VIDEO */
@@ -75,6 +77,15 @@ main .blue_overlay img {
   width: auto;
 
   max-height: 570px;
+}
+
+main .blue_overlay p {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  width: 250px;
+  padding: 2rem 1rem;
+  line-height: 2rem;
 }
 
 main video {
@@ -201,6 +212,29 @@ main .imageCollage img {
 }
 
 
+
+/* ABOUT */
+
+main .about_front_image {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  max-height: 570px;
+
+  object-fit: cover;
+
+}
+
+main .about_images {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
+main .about_images img {
+  width: 100%;
+}
+
   /* FOOTER */
 
 footer {
@@ -254,6 +288,42 @@ footer {
     width: 100%;
   }
 
+/* ABOUT */
+
+main .about_front_image {
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  max-height: 570px;
+
+  object-fit: cover;
+
+}
+
+main .about_text {
+  display: none;
+  background-color: var(--gotchaBlue);
+  margin-top: -0.5rem;
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  line-height: 2rem;
+}
+
+main .about_images {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+}
+
+main .about_images img {
+  width: 100%;
+  max-width: 354px;
+}
+
+
   /* MEDIA QUERY */
 
 @media screen and (min-width: 1080px) {
@@ -298,6 +368,11 @@ footer {
 
   .nav a:hover {
     text-decoration: underline;
+  }
+
+  header .active {
+    background-color: transparent;
+    color: var(--white);
   }
 
   /* MAIN */
@@ -372,11 +447,21 @@ footer {
   main .bubble_tea {
     margin: 0 5rem;
   }
+
+  /* ABOUT */
+  main .about_text {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 1010px) {
-  main .blue_overlay img {
+
+@media screen and (max-width: 1100px) {
+  main .blue_overlay {
     display: none;
+  }
+
+  main .about_text {
+    display: block;
   }
 
 }
