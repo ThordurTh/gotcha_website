@@ -253,3 +253,130 @@ footer {
   footer .map iframe {
     width: 100%;
   }
+
+  /* MEDIA QUERY */
+
+@media screen and (min-width: 1080px) {
+  /* HEADER  */
+
+  header {
+    height: 110px;
+    border-bottom: 4px solid var(--milkTea);
+  }
+
+  header .logo,
+  header .menu,
+  header .about {
+    border: none;
+  }
+
+  .logo img {
+    width: auto;
+    height: 110px;
+  }
+
+  header {
+    background-color: var(--gotchaBlue);
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    position: absolute;
+    right: 5vw;
+    top: 40px;
+  }
+
+  .nav a {
+    display: block;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* MAIN */
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* HOW IT WORKS */
+
+  main .how-it-works {
+    flex-direction: row;
+    align-items: baseline;
+    padding: 3rem 3rem 1.5rem;
+  }
+
+  main .step1,
+  main .step2,
+  main .step3 {
+    width: 33%;
+  }
+
+  main .enjoy img {
+    width: 200px;
+  }
+
+  main .toppings img {
+    margin-top: 3rem;
+  }
+
+  main .toppings div:nth-child(2) {
+    margin-top: 3rem;
+  }
+
+  /* IMAGE COLLAGE */
+  main .imageCollage {
+    margin: 1rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  /* FOOTER */
+
+  footer .gradient {
+    padding: 0 5%;
+
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  footer .information {
+    align-self: center;
+    margin-left: 1rem;
+  }
+
+  footer .socials {
+    order: 3;
+    padding-top: 1rem;
+    width: 80%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  footer .map {
+    order: 2;
+    grid-area: 1 / 2 / span 2 / span 1;
+    padding: 3rem 0 1rem;
+  }
+
+  main .bubble_tea {
+    margin: 0 5rem;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  main .blue_overlay img {
+    display: none;
+  }
+
+}
