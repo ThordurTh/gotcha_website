@@ -61,7 +61,10 @@
     border-left: 2px solid var(--white);
   }
 
-  
+  header .active {
+    background-color: var(--white);
+    color: var(--gotchaBlue);
+  }
 
 /* MAIN */
 
@@ -212,7 +215,6 @@ main .imageCollage img {
 }
 
 
-
 /* ABOUT */
 
 main .about_front_image {
@@ -220,19 +222,32 @@ main .about_front_image {
   height: auto;
   min-height: 350px;
   max-height: 570px;
-
+position: relative;
   object-fit: cover;
 
+}
+
+main .about_text {
+  display: none;
+  background-color: var(--gotchaBlue);
+  margin-top: -0.5rem;
+  color: var(--white);
+  padding: 1.5rem 1rem;
+  line-height: 2rem;
 }
 
 main .about_images {
   display: flex;
   width: 100%;
   gap: 1rem;
+  padding-top: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-around; 
 }
 
 main .about_images img {
   width: 100%;
+  max-width: 354px;
 }
 
   /* FOOTER */
