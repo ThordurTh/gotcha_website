@@ -61,6 +61,146 @@
     border-left: 2px solid var(--white);
   }
 
+/* MAIN */
+
+/* VIDEO */
+
+main .blue_overlay {
+  position: absolute;
+  z-index: 1;
+}
+
+main .blue_overlay img {
+  position: absolute;
+  width: auto;
+
+  max-height: 570px;
+}
+
+main video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+  max-height: 570px;
+
+  object-fit: cover;
+}
+
+/* main .video img {
+  width: 150%;
+  overflow: hidden;
+} */
+
+/* HOW IT WORKS */
+
+main .how-it-works {
+  background-color: var(--boardBlack);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+main .step1 {
+  width: 100%;
+}
+
+main .fruit_milk {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem 1.5rem;
+  width: 100%;
+  justify-content: space-around;
+}
+
+main .h_background {
+  background-image: url(images/heading_background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0.1rem;
+  margin: 0.8rem;
+}
+
+main .h_step {
+  width: 60%;
+  margin: 0 auto 1rem;
+}
+
+main h2 {
+  /* background-image: url(images/heading_background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0.1rem; */
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+main .how-it-works h3 {
+  font-size: 1.3rem;
+}
+
+.or {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-30deg);
+  margin-top: 1.1rem;
+  font-size: 1.3rem;
+}
+
+main .step2 {
+  width: 100%;
+}
+
+.step2 img {
+  width: 80%;
+}
+
+main .toppings {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+
+main .step3 {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+main .enjoy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 3rem;
+}
+
+main .enjoy h3 {
+  transform: rotate(-11deg);
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+main .enjoy img {
+  width: 250px;
+}
+
+/* IMAGE COLLAGE */
+main .imageCollage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+main .imageCollage img {
+  width: 100%;
+}
+
+
   /* FOOTER */
 
 footer {
