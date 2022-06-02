@@ -214,6 +214,90 @@ main .imageCollage img {
   width: 100%;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~MENU~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main .bubble_tea {
+  background-color: var(--boardBlack);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+main .h_bubble_tea{
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+main .bubble_tea h1 {
+  font-size: 2.5rem ;
+  text-transform: uppercase;
+}
+
+main .bubble_tea h2 {
+  font-size: 2rem ;
+  text-transform: uppercase;
+  max-width: 200px;
+  margin: 1rem auto;
+}
+
+main .bubble_tea p {
+  font-size: 2rem ;
+}
+
+main .bubble_tea img {
+  width: 100%;
+}
+
+main .menu_fruit_milk_titles {
+  display: grid;
+  grid-template-columns: 1fr 0 1fr;
+  font-size: 1.5rem;
+  padding: 1rem 0 3rem;
+}
+
+main .menu_or {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(-30deg);
+  font-size: 1rem;
+  right: 0.8rem;
+  top: 0.5rem;
+}
+
+main .menu_fruit_milk {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
+
+
+main .menu_fruit_tea {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 170px);
+  justify-content: center;
+}
+main .menu_milk_tea {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 170px);
+  justify-content: center;
+  grid-template-rows: repeat(auto-fit, 215px);
+}
+
+
+
+main .menu_fruit_tea {
+  border-right: 2px solid var(--white);
+}
+main .menu_milk_tea {
+  border-left: 2px solid var(--white);
+}
 
 /* ABOUT */
 
@@ -479,4 +563,19 @@ main .about_images img {
     display: block;
   }
 
+}
+
+@media screen and (min-width: 1540px) {
+
+  /* MENU */
+main .menu_fruit_tea {
+  grid-template-columns: repeat(3, 170px);
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+}
+main .menu_milk_tea {
+  grid-template-columns: repeat(3, 170px);
+  column-gap: 2rem;
+  row-gap: 0.5rem;
+}
 }
