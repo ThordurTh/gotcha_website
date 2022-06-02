@@ -219,8 +219,17 @@ main .imageCollage img {
 main .bubble_tea {
   background-color: var(--boardBlack);
   color: var(--white);
-  padding: 1rem 0;
   text-align: center;
+  padding: 1rem 0;
+}
+
+main .menu_overlay {
+  background-image: url(images/menu_overlay.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 200px;
+  display: none;
+  z-index: 1;
 }
 
 main .h_bubble_tea{
@@ -231,9 +240,17 @@ main .h_bubble_tea{
 main .bubble_tea h1 {
   font-size: 2.5rem ;
   text-transform: uppercase;
+  color: var(--boardBlack);
+  position: relative;
+  top: 40px;
 }
 
 main .bubble_tea h2 {
+  font-size: 2.5rem ;
+  text-transform: uppercase;
+}
+
+main .bubble_tea h3 {
   font-size: 2rem ;
   text-transform: uppercase;
   max-width: 200px;
@@ -251,7 +268,7 @@ main .bubble_tea img {
 main .menu_fruit_milk_titles {
   display: grid;
   grid-template-columns: 1fr 0 1fr;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 1rem 0 3rem;
 }
 
@@ -298,6 +315,80 @@ main .menu_fruit_tea {
 main .menu_milk_tea {
   border-left: 2px solid var(--white);
 }
+
+/* MENU toppings */
+/* main .menu_topping_titles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 2rem;
+  padding: 1rem 0 3rem;
+} */
+
+main .menu_step2 {
+  padding: 6rem 0 3rem;
+}
+
+main .menu_toppings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+      
+}
+
+main .menu_toppings img {
+  width: 150px;
+}
+
+main .menu_toppings h4 {
+  font-size: 2rem;
+padding: 0 0 3rem;
+}
+
+
+.topping_item {
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.tapioca {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;
+}
+.bubbles {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;  
+}
+.jellies {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, 150px);
+  justify-content: center;
+}
+
+main .bubbles img, main .tapioca img {
+  padding: 1rem;
+}
+
+.menu_steps {
+  text-transform: capitalize;
+} 
+
+
+main .coffee {
+  background-color: var(--boardBlack);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin: 1rem 0;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
 
 /* ABOUT */
 
@@ -543,14 +634,57 @@ main .about_images img {
     padding: 3rem 0 1rem;
   }
 
-  main .bubble_tea {
-    margin: 0 5rem;
-  }
+ 
 
   /* ABOUT */
   main .about_text {
     display: none;
   }
+
+  /* MENU */
+   main .bubble_tea {
+    margin: 0 5rem;
+    padding: 0 0 3rem;
+    border-radius: 10px 10px 0 0 ;
+  }
+
+  main .menu_overlay {
+    display: block;
+  }
+
+  main .menu_toppings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    align-items: flex-start;
+}
+ 
+.bubbles, .jellies {
+   border-left: 4px solid var(--white);
+  
+}
+
+.tapioca_section {
+  width: 30%;
+  
+}
+
+.bubble_section {
+  width: 40%;
+  
+}
+
+.jelly_section {
+  width: 30%;
+  
+}
+
+main .coffee {
+  margin: 1rem 5rem;
+}
+
+
 }
 
 
