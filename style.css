@@ -125,8 +125,21 @@ main .how-it-works {
   padding: 3rem 0;
 }
 
-main .step1 {
+main .gotcha_wolt {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem 1.5rem;
   width: 100%;
+  justify-content: space-around;
+}
+
+main .gotcha_wolt img {
+  width: 150px;
+}
+
+main .gotcha_wolt .wolt_logo {
+  border-radius: 100%;
+  padding: 1.5rem;
 }
 
 main .fruit_milk {
@@ -481,7 +494,11 @@ footer {
     padding: 2rem 1.5rem;
     width: 100%;
   }
-  
+
+  footer .wolt_logo {
+    width: 55px;
+    border-radius: 100%;
+  }
   footer .map {
     margin: 0 2rem;
   }
@@ -607,21 +624,69 @@ main .blue_overlay .overlay_text {
   z-index: 2;
   width: 250px;
   padding: 3rem 1.5rem;
-  line-height: 2rem;
+  line-height: 1.35rem;
 }
 
   /* HOW IT WORKS */
 
   main .how-it-works {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
     align-items: baseline;
-    padding: 3rem 3rem 1.5rem;
+    padding: 3rem 0 1.5rem;
+    gap: 1rem;
+    width: 100%;
   }
+
+main .how-it-works .step1 {
+  grid-column: 1/4;
+  border-right: none;
+  /* border-bottom: 4px solid var(--white); */
+  margin: 1rem;
+}
+
+main .how-it-works .gotcha_wolt {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+
+main .how-it-works .step1 img {
+
+  width: 200px;
+}
+
+main .how-it-works .step1 .wolt_logo {
+  padding: 2rem;
+  border-radius: 100%;
+}
+
+main .how-it-works .h_background {
+  min-width: 105px;
+  max-width: 240px;
+}
+
+main .how-it-works img {
+  width: 120px;
+}
+
+main .step3 img {
+  padding: 1rem;
+}
+
+main .step3 .how_to_jelly {
+  padding: 0rem;
+}
 
   main .step1,
   main .step2,
-  main .step3 {
-    width: 33%;
+  main .step3,
+  main .step4 {
+    /* width: 25%; */
+    /* border-right: 4px solid var(--white); */
   }
 
   main .enjoy img {
