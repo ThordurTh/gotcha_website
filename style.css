@@ -627,6 +627,11 @@ main .blue_overlay .overlay_text {
   line-height: 1.35rem;
 }
 
+main .blue_overlay span {
+  position: absolute;
+top: 90%;
+}
+
   /* HOW IT WORKS */
 
   main .how-it-works {
